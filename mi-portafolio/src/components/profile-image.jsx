@@ -1,9 +1,13 @@
-export default function ProfileImage() {
+export default function ProfileImage({ src, alt = "Foto de perfil" }) {
     return (
-      <div className="relative w-48 h-48 md:w-64 md:h-64 shrink-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full opacity-20 blur-2xl" />
-        <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-primary/30 shadow-2xl">
-          <img src="/professional-developer-portrait.png" alt="Foto de perfil" className="w-full h-full object-cover" />
+      <div className="relative group">
+        <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full opacity-75 group-hover:opacity-100 blur transition duration-500"></div>
+        <div className="relative">
+          <img
+            src={src || "/placeholder.svg"}
+            alt={alt}
+            className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-slate-800 shadow-2xl"
+          />
         </div>
       </div>
     )

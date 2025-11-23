@@ -3,26 +3,27 @@ import ActionButtons from "./action-buttons"
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-12">
-      <div className="max-w-6xl w-full">
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
-          <ProfileImage />
+    <section className="min-h-screen flex items-center justify-center px-4 py-20">
+      <div className="max-w-5xl mx-auto text-center space-y-8">
+        <div className="flex justify-center mb-8">
+          <ProfileImage src="/professional-developer-portrait.png" alt="Mi foto profesional" />
+        </div>
 
-          <div className="flex-1 text-center md:text-left">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 text-balance">
-              Hola, soy <span className="text-primary">Tu Nombre</span>
-            </h1>
+        <div className="space-y-4">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent leading-tight">
+            Hola, soy [Tu Nombre]
+          </h1>
 
-            <p className="text-xl md:text-2xl text-muted-foreground mb-3 font-mono">Desarrollador Full Stack</p>
+          <p className="text-xl md:text-2xl text-blue-300 font-medium">Desarrollador Full Stack</p>
 
-            <p className="text-base md:text-lg text-foreground/80 leading-relaxed mb-8 max-w-2xl text-pretty">
-              Apasionado por crear experiencias web excepcionales y soluciones innovadoras. Especializado en React,
-              Next.js y tecnologías modernas. Me encanta transformar ideas en productos digitales que impactan
-              positivamente a los usuarios.
-            </p>
+          <p className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+            Apasionado por crear experiencias web excepcionales. Especializado en React, Node.js y diseño de interfaces
+            modernas. Me encanta transformar ideas en soluciones digitales innovadoras y funcionales.
+          </p>
+        </div>
 
-            <ActionButtons />
-          </div>
+        <div className="pt-8">
+          <ActionButtons />
         </div>
       </div>
     </section>
