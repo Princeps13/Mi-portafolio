@@ -1,24 +1,5 @@
 @import "tailwindcss";
 
-@theme inline {
-  --color-background: 10 15 30;
-  --color-foreground: 240 250 255;
-  --color-primary: 59 130 246;
-  --color-primary-foreground: 255 255 255;
-  --color-secondary: 30 41 59;
-  --color-secondary-foreground: 240 250 255;
-  --color-accent: 37 99 235;
-  --color-accent-foreground: 255 255 255;
-  --color-muted: 30 41 59;
-  --color-muted-foreground: 148 163 184;
-  --color-card: 15 23 42;
-  --color-card-foreground: 240 250 255;
-  --color-border: 30 41 59;
-  --color-input: 30 41 59;
-  --color-ring: 59 130 246;
-  --radius: 0.5rem;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -26,12 +7,17 @@
 }
 
 body {
-  background-color: rgb(10 15 30);
-  color: rgb(240 250 255);
-  font-family: system-ui, -apple-system, sans-serif;
-  min-height: 100vh;
+  background-color: #020617;
+  color: #f8fafc;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
   min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
 }
